@@ -3,7 +3,7 @@
 
 ## O que é?
 
-_Wi-FI Agile Multiband_ é um conjunto de tecnologias que possibilitam um melhor uso dos recursos das redes Wi-Fi através de trocas de informações com outros dispositivos presentes na rede, direcionamento inteligente de clientes para access points, faixas de frequência e canais de acordo com o tráfego. Essa troca inteligente funciona como um balanceamento de carga entre os _APs_, evitando com que os clientes sofram devido à congestionamentos. Wi-FI Agile Multiband é uma parte do Wi-Fi CERTIFIED Vantage, que tem como objetivo melhorar a experiência do usuário em redes gerenciadas.  
+_Wi-Fi Agile Multiband_ é um conjunto de tecnologias que possibilitam um melhor uso dos recursos das redes Wi-Fi através de trocas de informações com outros dispositivos presentes na rede, direcionamento inteligente de clientes para access points, faixas de frequência e canais de acordo com o tráfego. Essa troca inteligente funciona como um balanceamento de carga entre os _APs_, evitando com que os clientes sofram devido à congestionamentos. Wi-FI Agile Multiband é uma parte do Wi-Fi CERTIFIED Vantage, que tem como objetivo melhorar a experiência do usuário em redes gerenciadas.  
     
 
 
@@ -21,7 +21,7 @@ A topologia pode variar de acordo com o ambiente e as necessidades. Por exemplo,
 
 ### Monitoramento dinâmico da rede
 
-O primeiro passo, como dito acima, é trocar informações. Os _APs_ presentes na rede trocam dados com os clientes, afim de se obter informações sobre proximidade, canais ou frequências em que o cliente prefere operar, outros _APs_ nas proximidades, qualidade do _link_ e etc. para que as métricas sejam calculadas. Essas informações são obtidas através de requisições e respostas _Beacon_, que podem ser de três tipos:
+O primeiro passo, como dito acima, é trocar informações. Os _APs_ presentes na rede trocam dados com os clientes, afim de se obter informações como canais ou frequências em que o cliente prefere operar, outros _APs_ nas proximidades, qualidade do _link_ e etc. para que os _APs_ sejam classificados de acordo com as métricas citadas acima. Essas informações são obtidas através de requisições e respostas _Beacon_, que podem ser de três tipos:
 
 - **Ativa:** O cliente envia requisições _Probe_ (de sondagem) num determinado canal esperando que os _APs_ que estiverem presentes neste canal respondam. Após receber as respostas, o cliente gera um relatório e envia para o _AP_ que solicitou através de uma requisição _Beacon_.
 - **Passiva:** Aqui o cliente fica escutando o canal de forma passiva em um intervalo de tempo esperando respostas _Probe_. 
@@ -33,7 +33,7 @@ Quando um cliente deseja fazer uma troca, ele solicita um relatório de vizinhan
 
 ### Transição rápida
 
-Essa troca de _APs_ deve ser rápida para não prejudicar a experiência do usuário. A _Wi-FI Agile Multiband_ utiliza o protocolo _IEEE 802.11r_ para permitir a autenticação rápida utilizando a segurança _WPA2_. Esse objetivo é atingido ao reutilizar as informações de segurança trocadas na associação inicial, dessa forma, ao realizar a transição o cliente não precisa negociar uma chave de segurança diferente com o novo _AP_. Já em redes corporativas elimina-se a necessidade do cliente reautenticar no servidor _RADIUS_ toda vez que troca de um _AP_ para outro.   
+Essa troca de _APs_ deve ser rápida para não prejudicar a experiência do usuário. A _Wi-Fi Agile Multiband_ utiliza o protocolo _IEEE 802.11r_ para permitir a autenticação rápida utilizando a segurança _WPA2_. Esse objetivo é atingido ao reutilizar as informações de segurança trocadas na associação inicial, dessa forma, ao realizar a transição o cliente não precisa negociar uma chave de segurança diferente com o novo _AP_. Já em redes corporativas elimina-se a necessidade do cliente reautenticar no servidor _RADIUS_ toda vez que troca de um _AP_ para outro.   
 
 
 ## Protocolos utilizados 
