@@ -1,3 +1,3 @@
 # Study notes
 
-Navegar pelos _branchs_ para ler as notas.
+Navegar pelos _branches_ para ler as notas.
