@@ -27,11 +27,11 @@ O primeiro passo, como dito acima, é trocar informações. Os _APs_ presentes n
 - **Passiva:** Aqui o cliente fica escutando o canal de forma passiva em um intervalo de tempo esperando respostas _Probe_. 
 - **Tabela:** Nesse caso o cliente envia relatórios _Beacon_ com informações armazenadas em _cache_ que foram coletadas anteriormente. 
 
-### Direcionamento inteligente
+### Direcionamento inteligente (_Intelligent steering_)
 
 Quando um cliente deseja fazer uma troca, ele solicita um relatório de vizinhança ao _AP_ que ele está conectado. Esse relatório contém uma lista de possíveis _APs_ candidatos para a transição, cada um associado a um valor classificatório que está entre 0 e 255. Essa troca também pode ser feita sem que o cliente a solicite, seja por motivos de balanceamento de carga, força do sinal ou porque o _AP_ está prestes a desligar ou mudar de canal. 
 
-### Transição rápida
+### Transição rápida (_Fast transition_)
 
 Essa troca de _APs_ deve ser rápida para não prejudicar a experiência do usuário. A _Wi-Fi Agile Multiband_ utiliza o protocolo _IEEE 802.11r_ para permitir a autenticação rápida utilizando a segurança _WPA2_. Esse objetivo é atingido ao reutilizar as informações de segurança trocadas na associação inicial, dessa forma, ao realizar a transição o cliente não precisa negociar uma chave de segurança diferente com o novo _AP_. Já em redes corporativas elimina-se a necessidade do cliente reautenticar no servidor _RADIUS_ toda vez que troca de um _AP_ para outro.   
 
@@ -43,3 +43,9 @@ Essa troca de _APs_ deve ser rápida para não prejudicar a experiência do usu�
 - **IEEE 802.11r:** Permite o cliente se reautenticar rapidamente quando realiza a troca de um _AP_ para outro.
 - **IEEE 802.11u:** Habilita os protocolos _IEEE 802.11k_, _IEEE 802.11v_ e recursos definidos pela _Wi-Fi Alliance_ para serem utilizados com o _ANQP_.
 - **recursos definidos pela _Wi-Fi Alliance_:** Inclui informações extras nos relatórios trocados pelos dispositivos além de adicionar melhorias no sistema de notificação definido pelo _IEEE 802.11v_ adicionando códigos de controle e _timeout_ para evitar notificações excessivas.
+
+
+## Referências
+
+- [Artigo da _Accton_](https://www.accton.com/Technology-Brief/wifi-agile-multiband/)
+- [Artigo e recursos da _Wi-Fi Alliance_](https://www.wi-fi.org/discover-wi-fi/wi-fi-agile-multiband)
